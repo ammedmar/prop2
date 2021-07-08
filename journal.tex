@@ -1,5 +1,4 @@
-\documentclass{amsart}
-\usepackage{enumitem}
+\documentclass{higherStructures}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{tikz-cd}
 \usepackage{bm}
@@ -30,7 +29,6 @@
 \newcommand{\y}{\mathbf{y}}
 \newcommand{\1}{\mathbf{1}}
 
-\newtheorem{theorem}{Theorem}
 \newtheorem{proposition}[theorem]{Proposition}
 \newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{corollary}[theorem]{Corollary}
@@ -46,48 +44,28 @@
 
 \input{figures}
 
-\usepackage[bookmarks=true, linktocpage=true,
-bookmarksnumbered=true, breaklinks=true,
-pdfstartview=FitH, hyperfigures=false,
-plainpages=false, naturalnames=true,
-colorlinks=true, pagebackref=true,
-pdfpagelabels]{hyperref}
-\hypersetup{
-	colorlinks,
-	citecolor=blue,
-	filecolor=blue,
-	linkcolor=blue,
-	urlcolor=blue
-}
-
-\setlength{\textwidth}{\paperwidth}
-\addtolength{\textwidth}{-2in}
-\setlength{\textheight}{\paperheight}
-\addtolength{\textheight}{-2in}
-\calclayout
-
 \begin{document}
-
+	
 \title{A finitely presented $E_\infty$-prop II: cellular context}
 \author{Anibal M. Medina-Mardones}
 \address{Department of Mathematics, University of Notre Dame, Notre Dame, IN 46556, United States}
 \address{Max Planck Institute for Mathematics, Bonn, 53111, Germany}
 \email{amedinam@nd.edu}
-\thanks{Partially supported by Innosuisse grant 32875.1 IP-ICT - 1.}
-\subjclass[2010]{55U10, 18C10, 18G55} %change
-\keywords{Operads and props, $E_\infty$-structures, diagonal approximations} %change
+\amsclass{55U10, 18C10, 18G55}
+\keywords{Operads, props, $E_\infty$ structures, cup product, simplicial sets, augmented simplicial sets} 
+
+\maketitle
 
 \begin{abstract}
 	We construct, using finitely many generating cell and relations, props in the category of CW-complexes with the property that their associated operads are models for the $E_\infty$-operad. We use one of these to construct a cellular $E_\infty$-bialgebra structure on the interval and derive from it a natural cellular $E_\infty$-coalgebra structure on the geometric realization of a simplicial set which, passing to cellular chains, recovers up to signs the Barratt-Eccles and Surjection coalgebra structures introduced by Berger-Fresse and McClure-Smith. We use another prop, a quotient of the first, to relate our constructions to earlier work of Kaufmann and prove a conjecture of his. This is the second of two papers in a series, the first investigates analogue constructions in the category of chain complexes.
 \end{abstract}
-
-\maketitle
 
 \input{body}
 
 \subsection*{Acknowledgments} 
 
 We would like to thank Dennis Sullivan, Bruno Vallette, Ralph Cohen, Stephan Stolz, Ralph Kaufmann, Kathryn Hess, Manuel Rivera and the anonymous referee for their insights, questions, and comments about this project.
+This work was partially supported by Innosuisse grant 32875.1 IP-ICT - 1.
 
 \bibliography{bibliography}
 \bibliographystyle{alpha}
